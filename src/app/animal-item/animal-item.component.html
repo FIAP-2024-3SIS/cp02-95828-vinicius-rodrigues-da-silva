@@ -1,7 +1,16 @@
-<strong>Componente animal</strong>
+<div *ngIf="animal.sexo === 'macho'" style="text-align: center;margin: 0 10px; background-color: rgb(168, 168, 168);">
+  <strong>Componente animal</strong>
 
-<p>Nome: {{ animal.nome }}</p>
-<p>Espécie: {{ animal.especie }}</p>
-<p>Idade: {{ animal.idade }}</p>
-<p>Sexo: {{ animal.sexo }}</p>
+  <p>Nome: {{ animal.nome }}</p>
+  <p>Espécie: {{ animal.especie }}</p>
+  <p>Idade: {{ animal.idade }}</p>
+  <p>Sexo: {{ animal.sexo }}</p>
+</div>
+<div *ngIf="animal.sexo === 'femea'" style="text-align: center;margin: 0 10px; background-color: rgb(116, 116, 255);">
+  <strong>Componente animal</strong>
 
+  <p>Nome: {{ animal.nome }}</p>
+  <p>Espécie: {{ animal.especie }}</p>
+  <p>Idade: {{ animal.idade }}</p>
+  <p>Sexo: {{ animal.sexo }}</p>
+</div>
